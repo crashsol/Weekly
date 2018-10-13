@@ -1,0 +1,19 @@
+/* pages/about/about.wxss */
+
+.about-banner {
+  height: 375rpx;
+  width: 375rpx;
+  border-radius: 50%;
+}
+
+.article-title {
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.nav-default {
+  color: blue;
+}
+.nav-hover {
+  color: red;
+}

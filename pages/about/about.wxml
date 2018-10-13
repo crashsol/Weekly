@@ -1,0 +1,16 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <image src='/images/1.jpg' class='about-banner'></image>
+  <text class='article-title'>电影周周看</text>
+  <view>
+    <text>我</text>
+    <navigator url='/pages/weekly/weekly' 
+     style='display:inline' 
+     open-type='switchTab'
+     hover-class='nav-hover'
+     class='nav-default'
+     >每周推荐</navigator>
+    <text>一部好片</text>
+  </view>
+  <text>我的微博:weibo.com/crashsol</text>
+</view>
