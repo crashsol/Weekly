@@ -8,8 +8,9 @@
     "enablePullDownRefresh": false
   },
   "pages": [
+    "pages/weekly/weekly",
     "pages/about/about",
-    "pages/weekly/weekly"
+    "pages/details/details"   
   ],
   "tabBar": {
     "list": [

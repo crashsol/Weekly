@@ -1,7 +1,14 @@
-<!--pages/weekly/weekly.wxml-->
-<view class='container'>
-  <text>本周推荐</text>
-  <image src='/images/2.jpg'></image>
-  <text>教父</text>
-  <text>点评:最精彩的剧本，最真实的黑帮电影</text>
-</view>
+<!-- pages/weekly/weekly.wxml -->
+<swiper indicator-dots='true' class='movie-swiper' previous-margin='50rpx' next-margin='50rpx' current='{{currentWeekly}}'>
+  <swiper-item wx:for='{{weeklyRecomandList}}' wx:key='index' bindtap='f1' data-movie-id="{{item.id}}">
+    <view class='container movie-card'>
+      <image src='{{item.imagePath}}' class='movie-image'></image>
+      <text>第{{index+1}}周  {{item.name}}</text>
+      <text>{{item.comment}}</text>
+      <text style='color:red;font-size:40rpx' wx:if='{{item.isHilyRecommand}}'>强烈推荐</text>
+      <button catchtap='f0' class='return-button' wx:if='{{ index < weeklyRecomandList.length -1}}'>
+        返回本周
+      </button>
+    </view>
+  </swiper-item>
+</swiper>
