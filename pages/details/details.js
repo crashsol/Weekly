@@ -18,6 +18,26 @@ Page({
     this.setData({
       mid: this.options.id
     })
+    //请求后台获取信息
+    wx.request({
+      url: 'https://api.douban.com',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function (res) {
+        // success
+        console.log(res)
+        console.log(res.data)
+
+      },
+      fail: function () {
+        // fail
+
+      },
+      complete: function () {
+        // complete
+      }
+    })
   },
 
   /**
